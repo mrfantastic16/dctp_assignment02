@@ -23,7 +23,7 @@
             <li><a href="#">Home</a></li>
             <li><a href="#">About</a></li>
             <li><a href="#">Profile</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#" class="btn--small">Contact</a></li>
           </ul>
         </nav>
 
@@ -313,6 +313,43 @@
       </div>
     </section>
 
+    <section class="contact-section">
+      <div class="container">
+        <h2 class="secondary-title">Contact Me</h2>
+        <form action="#">
+          <input type="text" placeholder="FIRST NAME" required />
+
+          <input type="text" placeholder="LAST NAME" required />
+
+          <input type="text" placeholder="EMAIL ADDRESS" required />
+
+          <input type="text" placeholder="PHONE" required />
+
+          <select name="Priority" id="priority" placeholder="Priority" required>
+            <option value="Priority disable selected">Priority</option>
+            <option value="Games">Games</option>
+            <option value="School">School</option>
+            <option>Home Management</option>
+          </select>
+
+          <textarea
+            name="meassage"
+            id=""
+            cols="30"
+            rows="5"
+            placeholder="meassage"
+          ></textarea>
+
+          <button class="submit">Submit</button>
+        </form>
+      </div>
+
+      <a href="./calculator.html" class="calc-link"
+        >Calculator project &rarr;</a
+      >
+    </section>
+
+    <script src="script.js"></script>
     <script
       type="module"
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
