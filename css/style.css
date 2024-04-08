@@ -6,6 +6,8 @@ HEADER SECTION
   background-size: cover;
   background-repeat: no-repeat;
   padding-bottom: 9.6rem;
+
+  position: relative;
 }
 
 .nav-section {
@@ -26,6 +28,50 @@ HEADER SECTION
   border: none;
   font-size: 4.8rem;
   color: #fff;
+  align-self: self-start;
+  /* margin: 0 auto; */
+}
+
+.nav-lists {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.nav-lists li a {
+  text-decoration: none;
+  color: #1f2937;
+  font-size: 1.8rem;
+}
+
+.btn--small {
+  background-color: #fb923c;
+  padding: 0.4rem 0.8rem;
+  color: #fff !important;
+}
+
+/* OPEN-NAV */
+
+.open-nav .nav-section {
+  background-color: #fff;
+  width: 100%;
+  height: 100vh;
+  justify-content: space-around;
+}
+
+.open-nav img,
+.open-nav .mobile-nav-icon[name="menu-outline"] {
+  display: none;
+}
+
+.open-nav .mobile-nav-icon[name="close-outline"] {
+  display: block;
+  color: #fb923c;
+  /* justify-self: unset; */
+}
+
+.open-nav .navigations {
+  display: block;
 }
 
 /* Hero section */
@@ -116,7 +162,7 @@ PROFILE SECTION
 .box-title {
   font-size: 1.8rem;
   margin-bottom: 2.4rem;
-  text-transform: uppercase;
+  /* text-transform: uppercasefb923c; */
 }
 
 .box-lists {
@@ -141,4 +187,49 @@ PROFILE SECTION
 
 progress {
   width: 100%;
+}
+
+/*-------------
+CONTACT SECTION
+-------------- */
+
+.contact-section {
+  padding: 6.4rem 0;
+  padding-bottom: 4.8rem;
+  background-color: #fb923c;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 0.8rem;
+  border-radius: 0.8rem;
+  font-weight: 700;
+  color: #333;
+  border: 1px solid #fff;
+}
+
+.submit {
+  width: 100%;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  background-color: #495057;
+  color: #fff;
+  border: none;
+  padding: 1.2rem 0;
+}
+
+.calc-link {
+  display: block;
+  text-align: center;
+  margin-top: 2.8rem;
+  color: #fff;
+  font-size: 1.6rem;
 }
