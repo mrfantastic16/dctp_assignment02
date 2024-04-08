@@ -139,6 +139,7 @@ PROFILE SECTION
   color: #fff;
   width: 100%;
   padding: 1.6rem;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.219);
 }
 
 .box {
@@ -232,4 +233,144 @@ textarea {
   margin-top: 2.8rem;
   color: #fff;
   font-size: 1.6rem;
+}
+
+/* ------------
+MEDIA QUERIES
+ --------------*/
+
+@media (min-width: 660px) and (max-width: 800px) {
+  .about-section {
+    padding: 6.4rem 0 6.4rem 0;
+  }
+
+  .abt-content {
+    padding-right: 18.8rem;
+  }
+
+  .img-box img {
+    width: 60%;
+  }
+
+  .profile-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: stretch;
+    gap: 2.4rem;
+  }
+
+  input,
+  select,
+  textarea,
+  .submit {
+    width: 70%;
+  }
+}
+
+@media (min-width: 801px) {
+  /* -------------
+  HEADER SECTION
+   ---------------*/
+
+  .header-section {
+    padding-top: 1.6rem;
+  }
+
+  .mobile-nav {
+    display: none;
+  }
+
+  .navigations {
+    display: block;
+  }
+
+  .nav-lists {
+    flex-direction: row;
+  }
+
+  .nav-lists li a {
+    color: #fff;
+    font-size: 2rem;
+  }
+
+  .greeting {
+    font-size: 2.4rem;
+  }
+
+  .name {
+    font-size: 5.2rem;
+  }
+
+  .description {
+    font-size: 3.6rem;
+  }
+
+  /* SECONDARY TITLE AND TEXTS */
+
+  .secondary-title {
+    font-size: 4.4rem;
+  }
+
+  .secondary-text {
+    font-size: 2.4rem;
+  }
+
+  /* -----------
+  ABOUT SECTION
+   ------------*/
+  .about-section {
+    padding-top: 6.4rem;
+    margin-bottom: 4.8rem;
+  }
+
+  .abt-container {
+    flex-direction: row;
+    gap: 8rem;
+  }
+  .abt-content {
+    padding-right: 18.8rem;
+  }
+
+  .img-box {
+    background: linear-gradient(to right, #fb923c 50%, transparent 50%);
+    padding: 1.2rem;
+  }
+
+  .abt-content {
+    padding-right: 16rem;
+  }
+
+  /* -----------
+  PROFILE SECTION
+   ------------*/
+
+  .profile-section {
+    margin-bottom: 4.8rem;
+  }
+
+  .profile-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr 1fr;
+    align-items: stretch;
+  }
+
+  /* -----------
+  CONTACT SECTION
+   ------------*/
+  form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.4rem;
+    padding-right: 20.8rem;
+  }
+
+  select,
+  textarea {
+    grid-column: 1/-1;
+  }
+
+  .submit {
+    grid-column: 1/-1;
+    justify-self: right !important;
+  }
 }
