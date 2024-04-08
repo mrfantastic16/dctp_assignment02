@@ -11,51 +11,77 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/general.css" />
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <div class="bg-img-div">
-      <header class="header-section">
-        <div class="container row">
-          <a href="#" class="logo-link">
-            <img
-              src="./img/logos/white-no-bg.svg"
-              alt="site-logo"
-              class="logo-img"
-            />
-          </a>
-          <nav class="nav-section">
-            <ul class="nav-lists">
-              <li class="nav-list-item">
-                <a href="#" class="nav-link">Home</a>
-              </li>
-              <li class="nav-list-item">
-                <a href="#" class="nav-link">About</a>
-              </li>
-              <li class="nav-list-item">
-                <a href="#" class="nav-link">Profile</a>
-              </li>
-              <li class="nav-list-item">
-                <a href="#" class="nav-link">Contact</a>
-              </li>
-            </ul>
-          </nav>
+    <header class="header-section">
+      <div class="container flex nav-section">
+        <img src="./img/logos/white-no-bg.svg" alt="" />
+
+        <nav class="navigations">
+          <ul class="nav-lists">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Profile</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+
+        <button class="mobile-nav">
+          <ion-icon name="menu-outline" class="mobile-nav-icon"></ion-icon>
+          <ion-icon name="close-outline" class="mobile-nav-icon"></ion-icon>
+        </button>
+      </div>
+
+      <div class="container">
+        <section class="hero-section">
+          <p class="greeting">Hello,</p>
+          <h1 class="name">I'm Chimobi Ekwunife</h1>
+          <p class="description">Software engineer</p>
+        </section>
+      </div>
+    </header>
+
+    <section class="about-section">
+      <div class="container flex abt-container">
+        <div class="img-box">
+          <img src="./img/web-img/chimobi.jpg" alt="Chimobi Ekwunife" />
         </div>
-      </header>
 
-      <section class="hero-section">
-        <div class="container">
-          <div class="hero-txt-contents">
-            <p class="greeting">Hello,</p>
-            <h1 class="name">I'm Chimobi</h1>
-            <p class="summary">Software enginerr</p>
+        <article class="abt-content">
+          <h2 class="secondary-title"><span>About</span> Me</h2>
+          <p class="secondary-text">
+            I'm Chimobi Ekwunife, a software engineer based in Jakarta. I'm
+            passionate about software development and I'm always looking for new
+            opportunities.
+          </p>
+        </article>
+      </div>
+    </section>
 
-            <div class="social-links">
-              <a href="#" class="social-ln github-ln">
+    <section class="profile-section">
+      <div class="container">
+        <h2 class="secondary-title dark"><span>Profile</span> & Credentials</h2>
+
+        <div class="flex profile-container">
+          <div class="profile-box">
+            <div class="box">
+              <span class="title-icon">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
                   <rect width="256" height="256" fill="none" />
-                  <path
-                    d="M119.83,56A52,52,0,0,0,76,32a51.92,51.92,0,0,0-3.49,44.7A49.28,49.28,0,0,0,64,104v8a48,48,0,0,0,48,48h48a48,48,0,0,0,48-48v-8a49.28,49.28,0,0,0-8.51-27.3A51.92,51.92,0,0,0,196,32a52,52,0,0,0-43.83,24Z"
+                  <polyline
+                    points="216 216 96 216 40.51 160.51"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="16"
+                  />
+                  <line
+                    x1="164"
+                    y1="92"
+                    x2="68"
+                    y2="188"
                     fill="none"
                     stroke="currentColor"
                     stroke-linecap="round"
@@ -63,15 +89,18 @@
                     stroke-width="16"
                   />
                   <path
-                    d="M104,232V192a32,32,0,0,1,32-32h0a32,32,0,0,1,32,32v40"
+                    d="M96,216H48a8,8,0,0,1-8-8V163.31a8,8,0,0,1,2.34-5.65L165.66,34.34a8,8,0,0,1,11.31,0L221.66,79a8,8,0,0,1,0,11.31Z"
                     fill="none"
                     stroke="currentColor"
                     stroke-linecap="round"
                     stroke-linejoin="round"
                     stroke-width="16"
                   />
-                  <path
-                    d="M104,208H72a32,32,0,0,1-32-32A32,32,0,0,0,8,144"
+                  <line
+                    x1="136"
+                    y1="64"
+                    x2="192"
+                    y2="120"
                     fill="none"
                     stroke="currentColor"
                     stroke-linecap="round"
@@ -79,16 +108,36 @@
                     stroke-width="16"
                   />
                 </svg>
-              </a>
+              </span>
+              <h3 class="box-title">Education</h3>
+            </div>
 
-              <a href="#" class="social-ln linkedin-ln">
+            <ul class="box-lists">
+              <li class="box-item">
+                <span class="item-title"><b>Echobi Basic School</b></span>
+                <span>First School leaving Cert</span>
+              </li>
+              <li class="box-item">
+                <span class="item-title"><b>Community Senior High</b></span>
+                <span>WAEC Cert</span>
+              </li>
+              <li class="box-item">
+                <span class="item-title"><b>ALX</b></span>
+                <span>Software Diploma</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="profile-box">
+            <div class="box">
+              <span class="title-icon">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
                   <rect width="256" height="256" fill="none" />
                   <rect
                     x="32"
-                    y="32"
+                    y="64"
                     width="192"
-                    height="192"
+                    height="144"
                     rx="8"
                     fill="none"
                     stroke="currentColor"
@@ -96,22 +145,8 @@
                     stroke-linejoin="round"
                     stroke-width="16"
                   />
-                  <line
-                    x1="120"
-                    y1="112"
-                    x2="120"
-                    y2="176"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="16"
-                  />
-                  <line
-                    x1="88"
-                    y1="112"
-                    x2="88"
-                    y2="176"
+                  <path
+                    d="M168,64V48a16,16,0,0,0-16-16H104A16,16,0,0,0,88,48V64"
                     fill="none"
                     stroke="currentColor"
                     stroke-linecap="round"
@@ -119,44 +154,92 @@
                     stroke-width="16"
                   />
                   <path
-                    d="M120,140a28,28,0,0,1,56,0v36"
+                    d="M224,118.31A191.09,191.09,0,0,1,128,144a191.14,191.14,0,0,1-96-25.68"
                     fill="none"
                     stroke="currentColor"
                     stroke-linecap="round"
                     stroke-linejoin="round"
                     stroke-width="16"
                   />
-                  <circle cx="88" cy="84" r="12" />
+                  <line
+                    x1="112"
+                    y1="112"
+                    x2="144"
+                    y2="112"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="16"
+                  />
                 </svg>
-              </a>
+              </span>
+              <h3 class="box-title">Experience</h3>
+            </div>
 
-              <a href="#" class="social-ln twitter-ln">
+            <ul class="box-lists">
+              <li class="box-item">
+                <span class="item-title"><b>Sale Representative</b></span>
+                <span>Ije Courture</span>
+              </li>
+              <li class="box-item">
+                <span class="item-title"><b>Sales Rep</b></span>
+                <span>Jedic Investment</span>
+              </li>
+              <li class="box-item">
+                <span class="item-title"><b>Manager</b></span>
+                <span>Chopsome</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="profile-box">
+            <div class="box">
+              <span class="title-icon">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
                   <rect width="256" height="256" fill="none" />
-                  <polygon
-                    points="48 40 96 40 208 216 160 216 48 40"
+                  <path
+                    d="M88,136a40,40,0,1,1-40,40v-6.73"
                     fill="none"
                     stroke="currentColor"
                     stroke-linecap="round"
                     stroke-linejoin="round"
                     stroke-width="16"
                   />
-                  <line
-                    x1="113.88"
-                    y1="143.53"
-                    x2="48"
-                    y2="216"
+                  <path
+                    d="M168,136a40,40,0,1,0,40,40v-6.73"
                     fill="none"
                     stroke="currentColor"
                     stroke-linecap="round"
                     stroke-linejoin="round"
                     stroke-width="16"
                   />
-                  <line
-                    x1="208"
-                    y1="40"
-                    x2="142.12"
-                    y2="112.47"
+                  <path
+                    d="M72,172H64A48,48,0,0,1,48,78.73V72a40,40,0,0,1,80,0V176"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="16"
+                  />
+                  <path
+                    d="M184,172h8a48,48,0,0,0,16-93.27V72a40,40,0,0,0-80,0"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="16"
+                  />
+                  <path
+                    d="M200,112h-4a28,28,0,0,1-28-28V80"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="16"
+                  />
+                  <path
+                    d="M56,112h4A28,28,0,0,0,88,84V80"
                     fill="none"
                     stroke="currentColor"
                     stroke-linecap="round"
@@ -164,299 +247,79 @@
                     stroke-width="16"
                   />
                 </svg>
-              </a>
+              </span>
+              <h3 class="box-title">Skills</h3>
             </div>
 
-            <div class="hero-img">
-              <img src="./img/web-img/chimobi.jpg" alt="Chimobi face front" />
+            <ul class="box-lists">
+              <li class="box-item">
+                <span class="item-title"><b>HTML</b></span>
+                <progress value="100" max="100"></progress>
+              </li>
+              <li class="box-item">
+                <span class="item-title"><b>CSS</b></span>
+                <progress value="70" max="100"></progress>
+              </li>
+              <li class="box-item">
+                <span class="item-title"><b>JS</b></span>
+                <progress value="20" max="100"></progress>
+              </li>
+            </ul>
+          </div>
+
+          <div class="profile-box">
+            <div class="box">
+              <span class="title-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+                  <rect width="256" height="256" fill="none" />
+                  <circle
+                    cx="128"
+                    cy="128"
+                    r="96"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="16"
+                  />
+                  <circle cx="92" cy="108" r="12" />
+                  <circle cx="164" cy="108" r="12" />
+                  <path
+                    d="M168,152c-8.3,14.35-22.23,24-40,24s-31.7-9.65-40-24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="16"
+                  />
+                </svg>
+              </span>
+              <h3 class="box-title">Hobbies</h3>
             </div>
+
+            <ul class="box-lists">
+              <li class="box-item">
+                <span class="item-title">Coding</span>
+              </li>
+              <li class="box-item">
+                <span class="item-title">Music</span>
+              </li>
+              <li class="box-item">
+                <span class="item-title">Gaming</span>
+              </li>
+            </ul>
           </div>
         </div>
-      </section>
-    </div>
-
-    <section class="about-me-section">
-      <div class="img-box">
-        <img src="./img/web-img/chimobi.jpg" alt="Chimobi face front" />
-      </div>
-      <article class="container">
-        <h2 class="section-title"><span>About</span>Me</h2>
-        <p class="abt-txt normal-txt">
-          I am a software engineer passionate about building beautiful and
-          functional websites. With a background in computer science, I'm
-          dedicated to creating captivating online experiences. Let's
-          collaborate to bring your digital vision to life.
-        </p>
-      </article>
-    </section>
-
-    <section class="profile-section">
-      <div class="container">
-        <h2 class="section-title"><span>Profile & Credentials</span></h2>
-
-        <div class="profile-card education">
-          <span class="card-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
-              <rect width="256" height="256" fill="none" />
-              <polyline
-                points="216 216 96 216 40.51 160.51"
-                fill="none"
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="16"
-              />
-              <line
-                x1="164"
-                y1="92"
-                x2="68"
-                y2="188"
-                fill="none"
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="16"
-              />
-              <path
-                d="M96,216H48a8,8,0,0,1-8-8V163.31a8,8,0,0,1,2.34-5.65L165.66,34.34a8,8,0,0,1,11.31,0L221.66,79a8,8,0,0,1,0,11.31Z"
-                fill="none"
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="16"
-              />
-              <line
-                x1="136"
-                y1="64"
-                x2="192"
-                y2="120"
-                fill="none"
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="16"
-              />
-            </svg>
-          </span>
-          <h3 class="card-title">Education</h3>
-          <ul class="card-attributes">
-            <li class="card-attribute">
-              <span class="card-attribute-name"
-                ><b>Echobi Basic School, Anambra</b></span
-              >
-              <span class="card-attribute-value"
-                >First School Leaving Certificate</span
-              >
-            </li>
-            <li class="card-attribute">
-              <span class="card-attribute-name"
-                >Community Senior High School</span
-              >
-              <span class="card-attribute-value">WAEC Certificate</span>
-            </li>
-            <li class="card-attribute">
-              <span class="card-attribute-name">ALX Africa</span>
-              <span class="card-attribute-value"
-                >Diploma in Software engineering</span
-              >
-            </li>
-          </ul>
-        </div>
-
-        <div class="profile-card experience">
-          <span class="card-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
-              <rect width="256" height="256" fill="none" />
-              <rect
-                x="32"
-                y="64"
-                width="192"
-                height="144"
-                rx="8"
-                fill="none"
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="16"
-              />
-              <path
-                d="M168,64V48a16,16,0,0,0-16-16H104A16,16,0,0,0,88,48V64"
-                fill="none"
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="16"
-              />
-              <path
-                d="M224,118.31A191.09,191.09,0,0,1,128,144a191.14,191.14,0,0,1-96-25.68"
-                fill="none"
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="16"
-              />
-              <line
-                x1="112"
-                y1="112"
-                x2="144"
-                y2="112"
-                fill="none"
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="16"
-              />
-            </svg>
-          </span>
-          <h3 class="card-title">Experience</h3>
-          <ul class="card-attributes">
-            <li class="card-attribute">
-              <span class="card-attribute-name"
-                ><b>Sales Representative</b></span
-              >
-              <span class="card-attribute-value">Ije's Courture</span>
-            </li>
-            <li class="card-attribute">
-              <span class="card-attribute-name">Sales Representative</span>
-              <span class="card-attribute-value">Jedic Investments</span>
-            </li>
-          </ul>
-        </div>
-
-        <div class="profile-card skills">
-          <span class="card-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
-              <rect width="256" height="256" fill="none" />
-              <path
-                d="M88,136a40,40,0,1,1-40,40v-6.73"
-                fill="none"
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="16"
-              />
-              <path
-                d="M168,136a40,40,0,1,0,40,40v-6.73"
-                fill="none"
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="16"
-              />
-              <path
-                d="M72,172H64A48,48,0,0,1,48,78.73V72a40,40,0,0,1,80,0V176"
-                fill="none"
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="16"
-              />
-              <path
-                d="M184,172h8a48,48,0,0,0,16-93.27V72a40,40,0,0,0-80,0"
-                fill="none"
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="16"
-              />
-              <path
-                d="M200,112h-4a28,28,0,0,1-28-28V80"
-                fill="none"
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="16"
-              />
-              <path
-                d="M56,112h4A28,28,0,0,0,88,84V80"
-                fill="none"
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="16"
-              />
-            </svg>
-          </span>
-          <h3 class="card-title">Skills</h3>
-          <ul class="card-attributes">
-            <li class="card-attribute">
-              <span class="card-attribute-name"><b>HTML</b></span>
-              <progress
-                class="card-attribute-value"
-                value="100"
-                max="100"
-              ></progress>
-            </li>
-            <li class="card-attribute">
-              <span class="card-attribute-name"><b>CSS</b></span>
-              <progress
-                class="card-attribute-value"
-                value="70"
-                max="100"
-              ></progress>
-            </li>
-            <li class="card-attribute">
-              <span class="card-attribute-name"><b>Javascript</b></span>
-              <progress
-                class="card-attribute-value"
-                value="20"
-                max="100"
-              ></progress>
-            </li>
-          </ul>
-        </div>
-
-        <div class="profile-card hobbies">
-          <span class="card-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
-              <rect width="256" height="256" fill="none" />
-              <circle
-                cx="128"
-                cy="128"
-                r="96"
-                fill="none"
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="16"
-              />
-              <circle cx="92" cy="108" r="12" />
-              <circle cx="164" cy="108" r="12" />
-              <path
-                d="M168,152c-8.3,14.35-22.23,24-40,24s-31.7-9.65-40-24"
-                fill="none"
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="16"
-              />
-            </svg>
-          </span>
-          <h3 class="card-title">Hobbies</h3>
-          <ul class="card-attributes">
-            <li class="card-attribute">
-              <span class="card-attribute-name"><b>Reading</b></span>
-            </li>
-            <li class="card-attribute">
-              <span class="card-attribute-name"><b>Cooking</b></span>
-            </li>
-            <li class="card-attribute">
-              <span class="card-attribute-name"><b>Gaming</b></span>
-            </li>
-            <li class="card-attribute">
-              <span class="card-attribute-name"><b>Music</b></span>
-            </li>
-            <li class="card-attribute">
-              <span class="card-attribute-name"><b>Sports</b></span>
-            </li>
-            <li class="card-attribute">
-              <span class="card-attribute-name"><b>Traveling</b></span>
-            </li>
-          </ul>
-        </div>
       </div>
     </section>
 
-    <aside class="contact-section"></aside>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
   </body>
 </html>
