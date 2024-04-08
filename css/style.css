@@ -1,8 +1,144 @@
 /*-------------
 HEADER SECTION
 -------------- */
-.logo-img {
-  width: 24rem;
-  color: white;
+.header-section {
+  background-image: url("../img/web-img/background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-bottom: 9.6rem;
 }
 
+.nav-section {
+  margin-bottom: 4.8rem;
+}
+
+.header-section img {
+  width: 16rem;
+}
+
+.navigations,
+.mobile-nav-icon[name="close-outline"] {
+  display: none;
+}
+
+.mobile-nav {
+  background: none;
+  border: none;
+  font-size: 4.8rem;
+  color: #fff;
+}
+
+/* Hero section */
+.greeting {
+  color: #fff;
+  font-size: 2rem;
+}
+
+.name {
+  color: #fb923c;
+  font-size: 3.4rem;
+  line-height: 1;
+  margin-bottom: 0.4rem;
+}
+
+.description {
+  color: #fff;
+  font-size: 2.2rem;
+}
+
+/*-------------
+ABOUT SECTION
+-------------- */
+
+.about-section {
+  background-color: #1f2937;
+  padding: 4.8rem 0;
+  /* padding-right: 6.4rem; */
+  padding-left: 3.2rem;
+  padding-right: 3.2rem;
+  margin: 0 auto;
+}
+
+.abt-container {
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.2rem;
+}
+
+/*-------------
+PROFILE SECTION
+-------------- */
+
+.profile-section {
+  padding: 6.4rem 0;
+}
+
+.dark {
+  color: #fb923c;
+}
+
+.dark span {
+  border-bottom: 2px solid #1f2937;
+}
+
+.profile-container {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.6rem;
+}
+
+.profile-box {
+  background-color: #1f2937;
+  color: #fff;
+  width: 100%;
+  padding: 1.6rem;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.title-icon {
+  background-color: #fff;
+  color: #fb923c;
+  padding: 0.8rem;
+  border-radius: 10000px;
+}
+
+.title-icon svg {
+  width: 2.4rem;
+  height: 2.4rem;
+}
+
+.box-title {
+  font-size: 1.8rem;
+  margin-bottom: 2.4rem;
+  text-transform: uppercase;
+}
+
+.box-lists {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.box-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.box-item span {
+  color: #6b7280;
+}
+
+.item-title {
+  font-size: 1.4rem;
+}
+
+progress {
+  width: 100%;
+}
